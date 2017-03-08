@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.norstar.guide">
-<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon1"
@@ -9,13 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GuideActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
-        <activity android:name=".SuccessActivity"
+        <activity
+            android:name=".GuideActivity"
             android:screenOrientation="landscape"></activity>
-        <activity android:name=".WelcomeActivity"
+        <activity
+            android:name=".SuccessActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".WelcomeActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CartoonActivity"></activity>
     </application>
 
 </manifest>
